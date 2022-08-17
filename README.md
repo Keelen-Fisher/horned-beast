@@ -89,5 +89,5 @@ Number and name of feature: Feature **number 3**:  Bootstrap
 Estimate of time needed to complete: 3 hours
 As a user, I want to see a visually pleasing application that is also reponsive when I view this application on different screen sizes.
 Start time: 9:40 Pm
-Finish time: 
-Actual time needed to complete: 2 hours
+Finish time: 10:08 Pm
+Actual time needed to complete: 28 minutes
