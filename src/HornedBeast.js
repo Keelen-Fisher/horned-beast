@@ -8,6 +8,7 @@ class HornedBeast extends React.Component{
   }
 
   addingOne = () => {
+    // Do not use ++this.state.clicked, you CANNOT change state, only add to it. 
     this.setState({clicked: this.state.clicked + 1});
   };
 
