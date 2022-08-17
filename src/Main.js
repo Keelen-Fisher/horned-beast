@@ -1,7 +1,6 @@
 import React from 'react';
 import HornedBeast from './HornedBeast.js';
 import Horns from './data.json';
-import 'bootstrap/dist/css/bootstrap.min.css';
 class Main extends React.Component{
 
 
