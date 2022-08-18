@@ -1,5 +1,5 @@
 import React from 'react';
-
+import selectedBeast from './selectedBeast';
 class HornedBeast extends React.Component{
 
   constructor(props){
@@ -15,6 +15,7 @@ class HornedBeast extends React.Component{
 
   render(){
     return(
+      <>
       <div>
 
         <h2>{this.props.title} </h2>
@@ -33,6 +34,8 @@ class HornedBeast extends React.Component{
         </p>
           
       </div>
+      
+      </>
     );
   };
 

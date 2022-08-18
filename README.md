@@ -1,4 +1,42 @@
-# Getting Started with Create React App
+# Time, number of feature, and what the user wants
+
+## Class 02 Lab
+
+Number and name of feature: Feature **number 1**:  Display images
+Estimate of time needed to complete: 2-3 hours
+As a user, I want to view the images on the page so that I can browse the photo collection.
+Start time: 5:40 Pm
+Finish time: 7:28 Pm
+Actual time needed to complete: 1 hours 40 minutes
+
+Number and name of feature: Feature **number 2**:  Allow users to vote for their favorite beast
+Estimate of time needed to complete: 3 hours
+As a user, I want to be able to interact with the site and pick my favorite beast.
+Start time: 7:40 PM
+Finish time: 9:30 Pm
+Actual time needed to complete: 2 hours
+
+Number and name of feature: Feature **number 3**:  Bootstrap
+Estimate of time needed to complete: 3 hours
+As a user, I want to see a visually pleasing application that is also reponsive when I view this application on different screen sizes.
+Start time: 9:40 Pm
+Finish time: 10:08 Pm
+Actual time needed to complete: 28 minutes
+
+## Class 03 Lab
+
+Number and name of feature: Feature **number 1**:  Display a Modal
+
+Estimate of time needed to complete: 2-3 hours
+
+As a user, I want the image to be displayed in a larger size and with the description shown so that I can view the details of a single image.
+
+Start time: 6:30 Pm
+Finish time:  Pm
+
+Actual time needed to complete: 1 hours 40 minutes
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
