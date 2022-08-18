@@ -1,20 +1,29 @@
 import React from 'react';
 import HornedBeast from './HornedBeast.js';
 import Horns from './data.json';
-class Main extends React.Component{
+
+class Main extends React.Component {
 
 
 
-  render(){
-    return(
-      <section>
+  render() {
+    return (
+      <>
 
-   
-          {
-            Horns.map((value, index) => { return <HornedBeast title = {value.title} URLSite = {value.image_url} description = {value.description} namKey = {value.keyword} hornNumber = {value.horns}/>;
-          })
+
+        {
+          Horns.map((beast, index) => {
+            return <HornedBeast
+              title={beast.title}
+              URLSite={beast.image_url}
+              description={beast.description}
+              namKey={beast.keyword}
+              hornNumber={beast.horns}
+            />;
           }
-{/* 
+          )};
+
+        {/* 
         // <HornedBeast
         // title = 'HornedBeast 1'
         // source = 'ImagePlaceholderforHornedBeast1.png'
@@ -29,7 +38,7 @@ class Main extends React.Component{
         // />
 
          */}
-      </section>
+      </>
 
     );
   }

@@ -1,15 +1,22 @@
 import React from 'react';
-import selectedBeast from './selectedBeast';
+import selectedBeast from './SelectedBeast';
+
+
 class HornedBeast extends React.Component{
 
   constructor(props){
-  super(props);
-  this.state = {clicked: 0};
+    super(props);
+    this.state = {
+      clicked: 0
+    };
   }
 
   addingOne = () => {
-    // Do not use ++this.state.clicked, you CANNOT change state, only add to it. 
-    this.setState({clicked: this.state.clicked + 1});
+    // Do not use ++this.state.clicked, you CANNOT change state, only add to it.
+    // setState Reserved function name that updates the state/value. 
+    this.setState({
+      clicked: this.state.clicked + 1
+    });
   };
 
 
@@ -17,7 +24,7 @@ class HornedBeast extends React.Component{
     return(
       <>
       <div>
-
+        {/*  props- Comes from the parent in Main.js */}
         <h2>{this.props.title} </h2>
         <h2>Hearts:  {this.state.clicked}</h2>
 
