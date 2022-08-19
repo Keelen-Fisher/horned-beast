@@ -43,11 +43,11 @@ class HornedBeast extends React.Component{
           
       </div>
 
-      {/* <div key={this.props._id} className = "Name">
+      <div key={this.props._id} className = "Name" style = "width: 18rem;">
         <figure onClick={this.props.handleSelect} className = "ImageUrl">
           <img className="beastImage" src={this.props.}></img>
         </figure>
-      </div> */}
+      </div>
       
       </>
     );

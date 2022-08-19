@@ -35,7 +35,6 @@ class App extends React.Component {
   render() {
     // console.log(Horns)
     return (
-      // <title>HornedBeast</title>
       <>
         <Header />
         <Main
