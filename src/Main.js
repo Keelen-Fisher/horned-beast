@@ -1,6 +1,6 @@
 import React from 'react';
 import HornedBeast from './HornedBeast.js';
-import Horns from './data.json';
+
 
 class Main extends React.Component {
 
@@ -12,15 +12,17 @@ class Main extends React.Component {
 
 
         {
-          Horns.map((beast, index) => {
-            return <HornedBeast
+          this.props.allBeasts.map((beast, index) => (
+             <HornedBeast
               title={beast.title}
-              URLSite={beast.image_url}
+              image_url={beast.image_url}
               description={beast.description}
               namKey={beast.keyword}
               hornNumber={beast.horns}
-            />;
-          }
+              key = {index}
+              index = {index}
+            />
+            )
           )};
 
         {/* 

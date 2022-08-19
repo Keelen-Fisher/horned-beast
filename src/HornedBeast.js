@@ -1,5 +1,5 @@
 import React from 'react';
-import selectedBeast from './SelectedBeast';
+// import SelectedBeast from './SelectedBeast';
 
 
 class HornedBeast extends React.Component{
@@ -8,6 +8,7 @@ class HornedBeast extends React.Component{
     super(props);
     this.state = {
       clicked: 0
+
     };
   }
 
@@ -30,7 +31,7 @@ class HornedBeast extends React.Component{
 
         <img 
           onClick={this.addingOne} 
-          src={this.props.URLSite} 
+          src={this.props.image_url} 
           alt={this.props.alteration} 
           width="400" />
 
@@ -41,6 +42,12 @@ class HornedBeast extends React.Component{
         </p>
           
       </div>
+
+      {/* <div key={this.props._id} className = "Name">
+        <figure onClick={this.props.handleSelect} className = "ImageUrl">
+          <img className="beastImage" src={this.props.}></img>
+        </figure>
+      </div> */}
       
       </>
     );

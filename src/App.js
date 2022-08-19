@@ -5,8 +5,8 @@ import Footer from './Footer'
 import Horns from './data.json';
 import SelectedBeast from './SelectedBeast';
 
-import { render } from '@testing-library/react';
-import { Spinner } from 'react-bootstrap';
+// import { render } from '@testing-library/react';
+// import { Spinner } from 'react-bootstrap';
 import React from 'react';
 
 class App extends React.Component {
@@ -20,16 +20,16 @@ class App extends React.Component {
     }
   }
 
-  createOption = (HornedBeast) => {
-    this.handleOpen();
-  }
+  // createOption = (HornedBeast) => {
+  //   this.handleOpen();
+  // }
 
   handleClose = () => {
-    this.setState({ show: false })
+    this.setState({ displayModal: false })
   }
 
-  handleOpen = () => {
-    this.setState({ show: true })
+  handleOpen = (name) => {
+    this.setState({ displayModal: true })
   }
 
   render() {
@@ -42,11 +42,12 @@ class App extends React.Component {
           allBeasts = {this.state.allBeasts}
         />
         <SelectedBeast
-          selectedBeast = 
-          />
-        <Footer />
+          // selectedBeast = {this.state.show}
+          allBeasts = {this.state.allBeasts}
+          handleClose = {this.handleClose}
+        />
 
-      </>
+        <Footer/> </>
 
 
     );
