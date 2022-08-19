@@ -34,7 +34,7 @@ As a user, I want the image to be displayed in a larger size and with the descri
 Start time: 6:30 Pm
 Finish time:  Pm
 
-Actual time needed to complete: 1 hours 40 minutes
+Actual time needed to complete: 
 
 ## Getting Started with Create React App
 
@@ -130,7 +130,8 @@ Start time: 9:40 Pm
 Finish time: 10:08 Pm
 Actual time needed to complete: 28 minutes
 
-### Lab 03 Requirements to finish: 
+### Lab 03 Requirements to finish
+
 First off, import the data.json file into your App component and send that data into the Main component, let's move it out Main ( and selectedBeast) and into App
 
 **on a side note, also make sure to capitalize the files that you're exporting components from. ie selectedBeast should be SelectedBeast. On another note, don't forget to export your SelectedBeast component. (DONE)
@@ -142,3 +143,15 @@ Inside of selectedBeast, move your current 'show' state and createOption(), hand
 Next, make sure to include your SelectedBeast component in App
 
 After doing this, in order tyo render a Modal for each selected beast, you will probably need to create some state and then pass that into your handleOpen() method, so that when an image is clicked, it knows which selected beast to grab. How might you go about doing that?
+
+- Code to create an image card using div
+
+<!-- <div key={this.props._id} className = "Name">
+        <figure onClick={this.props.handleSelect} className = "ImageUrl">
+          <img className="beastImage" src={this.props.image_url} alt={this.props.aleration}></img>
+            <figcaption className = "BeastTitle">{this.props.description}</figcaption>
+        </figure>
+          <div className="BeastCard_Div"> 
+            {this.addingOne}
+          </div>
+      </div> -->

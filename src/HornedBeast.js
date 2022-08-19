@@ -1,4 +1,5 @@
 import React from 'react';
+import Card from 'react-bootstrap/Card';
 // import SelectedBeast from './SelectedBeast';
 
 
@@ -27,7 +28,7 @@ class HornedBeast extends React.Component{
       <div>
         {/*  props- Comes from the parent in Main.js */}
         <h2>{this.props.title} </h2>
-        <h2>Hearts:  {this.state.clicked}</h2>
+        <h2>Hearts ❤️:  {this.state.clicked}</h2>
 
         <img 
           onClick={this.addingOne} 
@@ -43,20 +44,18 @@ class HornedBeast extends React.Component{
           
       </div>
 
-      <div key={this.props._id} className = "Name" style = "width: 18rem;">
-        <figure onClick={this.props.handleSelect} className = "ImageUrl">
-          <img className="beastImage" src={this.props.}></img>
-        </figure>
-      </div>
-      
+      <Card className="beastName">
+        <Card.Title>
+          {this.props.title}
+          {this.state.clicked}
+        </Card.Title>
+
+        <Card.Img onClick={this.add} src={this.props.image_url} alt={this.props.description}></Card.Img>
+        <Card.Text>{this.props.description}</Card.Text>
+      </Card>
       </>
     );
   };
-
-
-
-
-
 }
 
 export default HornedBeast;

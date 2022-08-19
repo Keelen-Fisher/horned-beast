@@ -4,7 +4,7 @@ import Main from './Main';
 import Footer from './Footer'
 import Horns from './data.json';
 import SelectedBeast from './SelectedBeast';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 // import { render } from '@testing-library/react';
 // import { Spinner } from 'react-bootstrap';
 import React from 'react';
@@ -44,6 +44,7 @@ class App extends React.Component {
           // selectedBeast = {this.state.show}
           allBeasts = {this.state.allBeasts}
           handleClose = {this.handleClose}
+          handleOpen = {this.handleOpen}
         />
 
         <Footer/> </>
