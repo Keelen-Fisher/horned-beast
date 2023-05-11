@@ -1,5 +1,7 @@
 import React from 'react';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+// import Navbar from 'react-bootstrap/Navbar';
+// import Container from 'react-bootstrap/Container';
 class Header extends React.Component{
 
   // constructor(props){
@@ -10,7 +12,7 @@ class Header extends React.Component{
 render(){
   return(
     <header>
-      <h1>The Ultimate Gallery of Horns!!</h1>
+      <h1 href="#home">The Ultimate Gallery of Horns!!</h1>
     
     </header>
   );
