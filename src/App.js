@@ -38,6 +38,11 @@ class App extends React.Component {
   //   this.handleOpen();
   // }
 
+  displayAsModal = (name) => {
+    const selectedBeast = Horns.find(beast => beast.title === name)
+    this.setState({selectedBeast, displayModal: true});
+  }
+
   handleClose = () => {
     this.setState({ displayModal: false })
   }
@@ -56,7 +61,9 @@ class App extends React.Component {
         />
         <SelectedBeast
           // selectedBeast = {this.state.show}
-          allBeasts = {this.state.allBeasts}
+          // allBeasts = {this.state.allBeasts}
+          selectedBeast={this.state.selectedBeast}
+          show={this.state.displayModal}
           handleClose = {this.handleClose}
           handleOpen = {this.handleOpen}
         />
